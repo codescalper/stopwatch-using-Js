@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.container {
+    padding: 3rem;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .time {
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+  h1,
+  p {
+    color: #f8f8f8;
+  }
+
+  button {
+    padding: 0.4rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 10px;
+    border: 1px solid #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+  }
+
+ 
+
+  button#stop:hover{
+    background-color: red;
+    color: #f8f8f8;
+    box-shadow: 0 0 10px 5px red;
+    transform: translateY(-3px);
+    transition: 0.3s ease-in-out;
+  }
+  button#start:hover{
+    background-color: rgb(47, 232, 37);
+    color: #f8f8f8;
+    box-shadow: 0 0 10px 5px rgb(47, 232, 37);
+    transform: translateY(-3px);
+    transition: 0.3s ease-in-out;
+  }
+  button#reset:hover{
+    background-color: rgb(25, 78, 212);
+    color: #f8f8f8;
+    box-shadow: 0 0 10px 5px rgb(25, 78, 212);
+    transform: translateY(-3px);
+    transition: 0.3s ease-in-out;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
